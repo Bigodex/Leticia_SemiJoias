@@ -1,0 +1,13 @@
+:root {
+    /* Paleta de Cores */
+    --primary-color: #EAFFFF;         /* Ex: vinho ou bordô */
+    --secondary-color: #3a90a8;       /* Ex: tom de rosa claro */
+    --text-color: #333333;            /* Cor padrão do texto */
+    --background-color: #f8e8da;      /* Fundo geral do body */
+    --header-bg-color: #A24C4F;       /* Fundo do header */
+    --sidebar-bg-color: #FAF5F3;      /* Fundo da sidebar */
+    --button-bg-color: #43ABC8;       /* Fundo de botões */
+    --button-text-color: #FFFFFF;     /* Cor do texto dos botões */
+    --price-color: #B12704;           /* Cor de destaque para preços */
+  }
+  

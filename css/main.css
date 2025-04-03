@@ -1,0 +1,102 @@
+/* General styles for the main container */
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2.5em;
+    background: linear-gradient(to bottom, #CEF0F5, #effcff);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0em;
+    border: 1px solid #68bbd8;
+    width: fit-content;
+    flex-direction: column;
+}
+
+main .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0.5em;
+}
+/* Produtos section styles */
+.produtos {
+    padding: 0;
+    background: linear-gradient(to bottom,  20% #CEF0F5, 50% #FFF6EF);
+    width: 100%;
+    margin-left: 2em;
+}
+
+.produtos h2 {
+    font-size: 24px;
+    color: #1c2224;
+    margin-bottom: 1em;
+    text-align: start;
+    font-weight: 500;
+    margin-top: 0.8em;
+    margin-left: 0.5em;
+    font-family: "Playfair Display", serif;
+}
+
+/* Individual produto styles */
+.produto {
+    display: inline-block;
+    width: calc(21% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #E7FAFF;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -0.2em;
+    border: 1px solid #a8d8e59c;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    color: #000714;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #285769;
+    margin: 0.8em 0;
+}
+
+.produto .preco p {
+    font-size: 16px;
+    color: #000714;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0.8em;
+}
+
+.produto button {
+    background-color: #68bbd8;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #3a90a8;
+}

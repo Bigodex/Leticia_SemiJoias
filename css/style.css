@@ -1,0 +1,13 @@
+@import './variables.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display';
+    background-color: #bee9fa;
+    color: var(--text-color);
+    overflow-x: hidden;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+

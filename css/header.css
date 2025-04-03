@@ -1,0 +1,148 @@
+/* DESIGN DO ESQUELETO DO HEADER */
+header {
+    background: linear-gradient(to right, #6DC7C7, #6BCBEA);
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+    height: 40px;
+    margin: 1em auto 0 auto; 
+    border-radius: 20px 20px 0 0;
+    border: 1px solid #68bbd8;
+}
+
+/* DESIGN DO TITULO DO HEADER */
+header .titulo {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    width: auto;
+    font-weight: 500;
+    display: flex;
+}
+
+header .titulo h1 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0;
+    text-align: start;
+    width: auto;
+    font-weight: 500;
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+    letter-spacing: 0.05em;
+}
+
+/* DESIGN DO INPUT DO HEADER */
+header .procurar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 500px;
+    margin-left: 3em;
+}
+
+header .procurar input[type="text"] {
+    padding: 0.8em;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 100%;
+    padding-right: 3em; /* Espaço para o botão */
+    box-sizing: border-box;
+    height: 2.5em;
+    font-family: "Quicksand", sans-serif
+}
+
+header .procurar input[type="text"]:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+header .procurar button {
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+header .procurar img {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5em;
+}
+
+header .procurar button:hover {
+    background-color: var(--secondary-color);
+}
+
+header .procurar button:focus {
+    outline: none;
+}
+
+/* DESIGN DO NAVEGADOR DO HEADER */
+header .nav {
+    display: flex;
+    align-items: right;
+    justify-content: end;;
+}
+
+header .nav nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 1.2em;
+}
+
+header .nav nav ul li {
+    display: inline-block;
+    margin: 0 0.8em;
+    gap: 0.5em;
+}
+
+header .nav nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+header .nav nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+header .nav nav ul li a:hover::after {
+    width: 100%;
+}
+
+header .nav nav ul li a:focus::after {
+    width: 100%;
+}

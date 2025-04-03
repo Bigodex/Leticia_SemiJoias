@@ -1,0 +1,118 @@
+/* Sidebar styles */
+.sidebar {
+  width: 12em;
+  height: 35.7em;
+  background: linear-gradient(to right, #a6deec, #87caca);
+  border-radius: 8px;
+  padding: 15px;
+  margin-left: 1em;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 30px; /* Fixa a sidebar no topo enquanto rola dentro do main */
+  z-index: 10; /* Garante que a sidebar fique acima de outros elementos */
+  margin-top: 10px; /* Adiciona uma margem superior quando o scroll acontece */
+}
+  
+/* Sidebar heading */
+.sidebar h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #1c2224;
+  text-align: start;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  margin-top: -0.1em;
+  letter-spacing: 0.05em;
+}
+
+/* Sidebar list styles */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+}
+
+.sidebar ul li {
+  margin-bottom: 1.9em;
+}
+
+.sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar links */
+.sidebar ul li a {
+  text-decoration: none;
+  color: #1c2224;
+  font-size: 16px;
+  position: relative; /* Necessário para posicionar a barra */
+  transition: color 0.3s ease;
+  font-family: "Quicksand", sans-serif
+}
+
+.sidebar ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #555; /* Cor da barra igual à cor do texto */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #EAFFFF;
+}
+
+.sidebar ul li a:hover::before {
+  width: 100%; /* Barra surge da esquerda para a direita */
+  background-color: #EAFFFF; /* Cor da barra muda para a cor do texto no hover */
+}
+
+/* Estilos responsivos para a sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* A sidebar ocupa toda a largura em telas menores */
+    height: auto; /* Ajusta a altura para caber o conteúdo */
+    margin-left: 0; /* Remove a margem à esquerda */
+    margin-top: 0; /* Remove a margem superior */
+    border-radius: 0; /* Remove o arredondamento para um visual mais limpo */
+    padding: 10px; /* Ajusta o padding para telas menores */
+  }
+
+  .sidebar h2 {
+    font-size: 24px; /* Ajusta o tamanho do título */
+    text-align: center; /* Centraliza o título */
+    cursor: pointer; /* Makes the title clickable */
+  }
+
+  .sidebar ul {
+    display: none; /* Hide the list by default */
+    margin-top: 0.5em; /* Ajusta o espaçamento da lista */
+  }
+
+  .sidebar ul.show {
+    display: block; /* Ensure the list is visible when the class is toggled */
+  }
+
+  .sidebar ul li {
+    margin-bottom: 1.2em; /* Reduz o espaçamento entre os itens da lista */
+  }
+
+  .sidebar ul li a {
+    font-size: 14px; /* Ajusta o tamanho da fonte dos links */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar h2 {
+    font-size: 20px; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .sidebar ul li a {
+    font-size: 12px; /* Reduz ainda mais o tamanho da fonte dos links */
+  }
+}

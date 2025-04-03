@@ -1,0 +1,196 @@
+footer {
+  background: linear-gradient(to bottom, #effcff, #CEF0F5);
+    color: #333;
+    text-align: center;
+    z-index: 1000;
+    position: relative;
+    left: 0;
+    right: 0;
+    border: 1px solid #68bbd8;
+}
+
+footer .barra {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, #6DC7C7, #6BCBEA);
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border: 0px 1px 0px 1px solid #68bbd8;
+}
+
+footer .conteudo-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    padding-left: 5em;
+    width: calc(100% - 2em);
+    margin: 0 0;
+}
+
+footer .conteudo-footer .sobre {
+    width: 25%;
+    text-align: justify
+}
+
+footer .conteudo-footer .sobre h2{
+  width: 36%;
+  font-weight: 600;
+  text-align: justify;
+  color: #1c2224;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.05em;
+  margin-bottom: -0.4em;
+}
+
+footer .conteudo-footer .sobre p{
+  width: 100%;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  color: #398499;
+}
+
+footer .conteudo-footer .links {
+    width: 25%;
+    text-align: justify;
+    margin-left: 4em
+}
+
+footer .conteudo-footer .links h2{
+  width: 100%;
+  font-weight: 600;
+  text-align: justify;
+  color: #1c2224;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.05em;
+  margin-bottom: 0em;
+}
+
+footer .conteudo-footer .links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .conteudo-footer .links ul li a {
+  display: flex; /* Ensure the link wraps both the image and text */
+  align-items: center; /* Align image and text vertically */
+  text-decoration: none;
+  color: #398499;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative; /* Necessário para posicionar a barra */
+  transition: color 0.3s ease;
+}
+
+footer .conteudo-footer .redes ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #555; /* Cor da barra igual à cor do texto */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+footer .conteudo-footer .links ul li a:hover {
+  color: #333;
+}
+
+footer .conteudo-footer .link ul li a:hover ::before {
+  width: 100%; /* Barra surge da esquerda para a direita */
+  background-color: #333; /* Cor da barra muda para a cor do texto no hover */
+}
+
+
+footer .conteudo-footer .redes {
+    width: 25%;
+    text-align: justify;
+}
+
+footer .conteudo-footer .redes h2{
+  width: 100%;
+  font-weight: 600;
+  text-align: justify;
+  color: #1c2224;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.05em;
+  margin-bottom: 0em;
+}
+
+footer .conteudo-footer .redes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+}
+
+footer .conteudo-footer .redes ul li {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin: 0 0.8em;
+    gap: 0.5em;
+}
+
+footer .conteudo-footer .redes ul li a {
+    display: flex; /* Ensure the link wraps both the image and text */
+    align-items: center; /* Align image and text vertically */
+    text-decoration: none;
+    color: #398499;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative; /* Necessário para posicionar a barra */
+    transition: color 0.3s ease;
+  }
+
+footer .conteudo-footer .redes ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #555; /* Cor da barra igual à cor do texto */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+footer .conteudo-footer .redes ul li a:hover {
+  color: #333;
+}
+
+footer .conteudo-footer .redes ul li a:hover ::before {
+  width: 100%; /* Barra surge da esquerda para a direita */
+  background-color: #333; /* Cor da barra muda para a cor do texto no hover */
+}
+
+footer .conteudo-footer .redes img {
+    width: 1.2em;
+    height: auto;
+    margin: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+footer .conteudo-footer .links img {
+    width: 1.2em;
+    height: auto;
+    margin: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.copyright {
+    background: linear-gradient(to bottom, #effcff, #CEF0F5);
+    color: #333;
+    text-align: center;
+    z-index: 1000;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    font-family: "quicksand", sans-serif;
+}
